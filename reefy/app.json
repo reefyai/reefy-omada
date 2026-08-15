@@ -1,0 +1,32 @@
+{
+  "slug": "omada",
+  "version": "6.2.14.11-reefy.2026-08-15-00",
+  "name": "Omada Controller",
+  "icon": "icon.jpg",
+  "description": "TP-Link Omada SDN network controller",
+  "image": "mbentley/omada-controller:6.2.14.11",
+  "upstream_image": "docker.io/mbentley/omada-controller:6.2.14.11",
+  "default_port": 8043,
+  "upstream_https": true,
+  "network_mode": "host",
+  "volumes": {
+    "data": {
+      "mount": "/opt/tplink/EAPController/data",
+      "uid": 508,
+      "backup": [
+        "borgbase"
+      ]
+    },
+    "logs": {
+      "mount": "/opt/tplink/EAPController/logs",
+      "uid": 508,
+      "backup": []
+    }
+  },
+  "env": {
+    "TZ": "Etc/UTC"
+  },
+  "tags": [
+    "pro"
+  ]
+}
