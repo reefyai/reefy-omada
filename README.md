@@ -18,4 +18,4 @@ Reefy. The persistent data and log volumes are retained across container
 updates, but the controller may migrate its database when it starts a newer
 release. Let the old controller stop cleanly before starting the update.
 
-The current Reefy package tracks Omada Controller `6.2.14.11`.
+The current Reefy package tracks Omada Controller `6.3.0.45`.
